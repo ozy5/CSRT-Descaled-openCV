@@ -2,13 +2,17 @@
 
 ## openCV CSRT Tracker C++ implementation
 
-This implementation is tested on openCV 4.6 and 4.7 versions.
-
+This implementation is tested on openCV 4.6 and 4.7 versions.\
+\
+\
 It is specifically designed to be conveniently used in applications where the bbox coordinates and the tracking signal is recieved from outside of the program.
 
 This program will print the parameter values, explained in the "Additional usage details" section.
+
 Then, it will print the default openCV CSRT tracker parameters. If one wants to make experiments on this parameters, they can be easily changed.
+
 Then, it will print the widht, height and FPS of the captured frames.
+
 In run-time, the information messages will be printed when tracking is initialized and descaling operations are done.
 
 
@@ -26,11 +30,12 @@ After this, perform cmake and make commands.
 cmake ..
 make
 ```
-Finally, you are ready to run the program.
-In the example usage below:
-0.22 means the width of initial bbox is the %22 percent of the capture width.
-0.3 means the height of initial bbox is the %30 percent of the capture height.
-14 mean if the mean FPS is lower than 14, the program will try to increase the FPS by descaling if possible.
+Finally, you are ready to run the program.\
+In the example usage below:\
+\
+The first parameter, 0.22 means the width of initial bbox is the %22 percent of the capture width.\
+The second parameter, 0.3 means the height of initial bbox is the %30 percent of the capture height.\
+The third parameter, 14 means if the mean FPS is lower than 14, the program will try to increase the FPS by descaling if possible.
 ```sh
 ./csrt_descaled_tracker 0.22 0.3 14
 ```

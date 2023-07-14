@@ -6,10 +6,27 @@ This implementation is tested on openCV 4.6 and 4.7 versions.
 
 An example usage
 
-## Building and Running
+### Building and Running
+First, download the files
+```
+```
+Then, go in to the project folder. Create a build directory and navigate to it.
+```
+```
+After this, perform cmake and make commands.
+```
+```
+Finally, you are ready to run the program.
+In the example usage below:
+0.22 means the width of initial bbox is the %22 percent of the capture width.
+0.3 means the height of initial bbox is the %30 percent of the capture height.
+14 mean if the mean FPS is lower than 14, the program will try to increase the FPS by descaling if possible.
+```sh
+./csrt_descaled_tracker 0.22 0.3 14
+```
+For additianol parser usage, the necessary details are given below: 
 
-
-
+#### Additional usage details
 
 This implementation takes additional arguments to classical openCV implementations. These parser arguments are:
 + The bbox width and bbox height. These are ratios and they have to be between 0 and 1. By default, bbox_w=0.22, bbox_h=0.3

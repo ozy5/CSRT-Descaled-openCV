@@ -16,13 +16,15 @@ In run-time, the information messages will be printed when tracking is initializ
 
 ### Building and Running
 First, download the files
-```
-```
 Then, go in to the project folder. Create a build directory and navigate to it.
 ```
+mkdir build
+cd build
 ```
 After this, perform cmake and make commands.
 ```
+cmake ..
+make
 ```
 Finally, you are ready to run the program.
 In the example usage below:

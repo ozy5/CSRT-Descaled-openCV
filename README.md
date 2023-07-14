@@ -4,7 +4,15 @@
 
 This implementation is tested on openCV 4.6 and 4.7 versions.
 
-An example usage
+It is specifically designed to be conveniently used in applications where the bbox coordinates and the tracking signal is recieved from outside of the program.
+
+This program will print the parameter values, explained in the "Additional usage details" section.
+Then, it will print the default openCV CSRT tracker parameters. If one wants to make experiments on this parameters, they can be easily changed.
+Then, it will print the widht, height and FPS of the captured frames.
+In run-time, the information messages will be printed when tracking is initialized and descaling operations are done.
+
+
+
 
 ### Building and Running
 First, download the files

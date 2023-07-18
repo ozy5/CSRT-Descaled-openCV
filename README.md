@@ -1,4 +1,5 @@
 # CSRT-Descaled
+This implementation aims to use openCV CSRT tracker in C++ with higher fps values. For this purpose, it descales the frames and run inference on these frames in order to increase the fps if it is possible when fps is lower than the threshold.
 
 ## openCV CSRT Tracker C++ implementation
 
